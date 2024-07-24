@@ -11,6 +11,9 @@
 		DE2549A32C4FCA5A00A84F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2549A22C4FCA5A00A84F3A /* ContentView.swift */; };
 		DE2549A52C4FCA5B00A84F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2549A42C4FCA5B00A84F3A /* Assets.xcassets */; };
 		DE2549A82C4FCA5B00A84F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2549A72C4FCA5B00A84F3A /* Preview Assets.xcassets */; };
+		DE2549B02C4FD22B00A84F3A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2549AF2C4FD22B00A84F3A /* Product.swift */; };
+		DE2549B32C4FE5EF00A84F3A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2549B22C4FE5EF00A84F3A /* ProductViewModel.swift */; };
+		DE2549B62C4FE63000A84F3A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2549B52C4FE63000A84F3A /* ProductListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		DE2549A22C4FCA5A00A84F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE2549A42C4FCA5B00A84F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2549A72C4FCA5B00A84F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE2549AF2C4FD22B00A84F3A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DE2549B22C4FE5EF00A84F3A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		DE2549B52C4FE63000A84F3A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		DE25499F2C4FCA5A00A84F3A /* AsyncAwaitvsCallbacks */ = {
 			isa = PBXGroup;
 			children = (
+				DE2549B42C4FE62100A84F3A /* View */,
+				DE2549B12C4FE5DE00A84F3A /* ViewModel */,
+				DE2549AE2C4FD22000A84F3A /* Model */,
 				DE2549A02C4FCA5A00A84F3A /* AsyncAwaitvsCallbacksApp.swift */,
 				DE2549A22C4FCA5A00A84F3A /* ContentView.swift */,
 				DE2549A42C4FCA5B00A84F3A /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				DE2549A72C4FCA5B00A84F3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE2549AE2C4FD22000A84F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE2549AF2C4FD22B00A84F3A /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2549B12C4FE5DE00A84F3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE2549B22C4FE5EF00A84F3A /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE2549B42C4FE62100A84F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2549B52C4FE63000A84F3A /* ProductListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,8 @@
 			dependencies = (
 			);
 			name = AsyncAwaitvsCallbacks;
+			packageProductDependencies = (
+			);
 			productName = AsyncAwaitvsCallbacks;
 			productReference = DE25499D2C4FCA5A00A84F3A /* AsyncAwaitvsCallbacks.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,8 @@
 				Base,
 			);
 			mainGroup = DE2549942C4FCA5A00A84F3A;
+			packageReferences = (
+			);
 			productRefGroup = DE25499E2C4FCA5A00A84F3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +176,9 @@
 			files = (
 				DE2549A32C4FCA5A00A84F3A /* ContentView.swift in Sources */,
 				DE2549A12C4FCA5A00A84F3A /* AsyncAwaitvsCallbacksApp.swift in Sources */,
+				DE2549B32C4FE5EF00A84F3A /* ProductViewModel.swift in Sources */,
+				DE2549B02C4FD22B00A84F3A /* Product.swift in Sources */,
+				DE2549B62C4FE63000A84F3A /* ProductListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
